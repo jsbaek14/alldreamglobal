@@ -257,6 +257,148 @@
       align-items: center;
     }
 
+    /* Pricing */
+    .pricing-section {
+      padding-top: 40px;
+      border-top: 1px solid var(--rule);
+      margin-bottom: 48px;
+    }
+
+    .pricing-intro {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-top: 16px;
+      margin-bottom: 28px;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .pricing-card {
+      background: white;
+      border: 1px solid var(--rule);
+      padding: 24px 20px;
+      transition: border-color 0.2s ease;
+    }
+
+    .pricing-card:hover {
+      border-color: var(--accent);
+    }
+
+    .pricing-featured {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    .pricing-tier {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .pricing-sub {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 4px;
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .pricing-rate {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px;
+      font-weight: 300;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .pricing-rate span {
+      font-size: 16px;
+      color: var(--muted);
+    }
+
+    .pricing-hours {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 300;
+      margin-top: 4px;
+    }
+
+    .pricing-range {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .pricing-range span {
+      font-weight: 300;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .pricing-includes {
+      list-style: none;
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .pricing-includes li {
+      font-size: 11.5px;
+      font-weight: 300;
+      color: var(--muted);
+      padding-left: 12px;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    .pricing-includes li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 10px;
+    }
+
+    .pricing-note {
+      font-size: 11px;
+      font-weight: 300;
+      color: var(--muted);
+      margin-top: 16px;
+      font-style: italic;
+    }
+
+    .pricing-consult {
+      margin-top: 20px;
+      padding: 16px 20px;
+      background: var(--accent-light);
+      border-left: 2px solid var(--accent);
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .pricing-consult span {
+      font-weight: 500;
+      color: var(--accent);
+    }
+
     .footer-brand {
       font-family: 'Cormorant Garamond', serif;
       font-size: 13px;
@@ -347,6 +489,58 @@
           <p>With over 14 years of experience across HR, finance, and business operations — in both Korea and New Zealand — I have worked with organisations ranging from multinational corporations to non-profits and small businesses.</p>
           <p>Currently working as Business Manager at All Heart NZ, I oversee HR, finance, and operational support across the organisation. I bring a rare combination of hands-on operational experience and practical knowledge of AI and automation tools, allowing me to not only manage business functions but actively improve the way they work.</p>
         </div>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="pricing-section">
+      <div class="section-label">Pricing</div>
+      <p class="pricing-intro">Services are offered on a monthly retainer basis. Each plan can be selected independently or combined based on your business needs. Custom packages are available upon request.</p>
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Stabilise</div>
+          <div class="pricing-sub">Operational Support</div>
+          <div class="pricing-rate">$80<span>/hr</span></div>
+          <div class="pricing-hours">15–18 hrs/month</div>
+          <div class="pricing-range">$1,200 – $1,440 <span>/ month</span></div>
+          <ul class="pricing-includes">
+            <li>HR administration</li>
+            <li>Financial process management</li>
+            <li>General management support</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card pricing-featured">
+          <div class="pricing-tier">Streamline</div>
+          <div class="pricing-sub">Process Improvement</div>
+          <div class="pricing-rate">$90<span>/hr</span></div>
+          <div class="pricing-hours">18–22 hrs/month</div>
+          <div class="pricing-range">$1,620 – $1,980 <span>/ month</span></div>
+          <ul class="pricing-includes">
+            <li>Everything in Stabilise</li>
+            <li>Operational inefficiency diagnosis</li>
+            <li>Structured process design</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Automate</div>
+          <div class="pricing-sub">AI & Automation</div>
+          <div class="pricing-rate">$100<span>/hr</span></div>
+          <div class="pricing-hours">20–25 hrs/month</div>
+          <div class="pricing-range">$2,000 – $2,500 <span>/ month</span></div>
+          <ul class="pricing-includes">
+            <li>Everything in Streamline</li>
+            <li>Automation tool implementation</li>
+            <li>AI-powered workflow design</li>
+          </ul>
+        </div>
+
+      </div>
+      <p class="pricing-note">All prices are in NZD and exclude GST. Monthly hours may vary based on scope. Custom packages available on request.</p>
+      <div class="pricing-consult">
+        <span>Not sure where to start?</span> We offer a complimentary business review to help identify where your business could run better.
       </div>
     </div>
 
