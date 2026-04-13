@@ -521,9 +521,15 @@
     color: var(--navy);
     outline: none;
     transition: border-color 0.2s;
+    width: 100%;
   }
 
-  .lm-form input:focus { border-color: var(--navy); }
+  .lm-form form,
+  .lm-form #mc_embed_signup_scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
   .lm-form button {
     padding: 16px;
